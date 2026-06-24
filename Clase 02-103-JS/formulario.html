@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Alumno</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="contenedor">
+
+        <h1>Registro de Alumno</h1>
+
+        <form id="formAlumno">
+
+            <div class="grupo">
+                <label for="nombre">Nombre Completo</label>
+                <input type="text" id="nombre" placeholder="Ingrese su nombre" maxlength="25">
+            </div>
+
+            <div class="grupo">
+                <label for="correo">Correo Electrónico</label>
+                <input type="email" id="correo" placeholder="ejemplo@correo.com">
+            </div>
+
+            <div class="grupo">
+                <label for="carrera">Carrera</label>
+                <select id="carrera">
+                    <option value="">Seleccione una carrera</option>
+                    <option>Analista Programador</option>
+                    <option>Ingeniería Informática</option>
+                    <option>Ciberseguridad</option>
+                    <option>Redes</option>
+                </select>
+            </div>
+
+            <div class="grupo">
+                <label for="semestre">Semestre</label>
+                <select id="semestre">
+                    <option value="">Seleccione semestre</option>
+                    <option value="1">1° Semestre</option>
+                    <option value="2">2° Semestre</option>
+                    <option value="3">3° Semestre</option>
+                    <option value="4">4° Semestre</option>
+                    <option value="5">5° Semestre</option>
+                    <option value="6">6° Semestre</option>
+                    <option value="7">7° Semestre</option>
+                    <option value="8">8° Semestre</option>
+                </select>
+            </div>
+
+            <div class="grupo">
+                <label for="promedio">Promedio</label>
+                <input type="number" id="promedio" step="0.1" min="1" max="7">
+            </div>
+
+            <div class="grupo">
+                <label for="fechaNacimiento">Fecha de Nacimiento</label>
+                <input type="date" id="fechaNacimiento">
+            </div>
+
+            <div id="errores"></div>
+            <div id="mensaje"></div>
+
+            <button type="button" id="btnValidar">
+                Registrar
+            </button>
+
+        </form>
+
+    </div>
+
+    <script src="formulario.js"></script>
+
+</body>
+</html>
